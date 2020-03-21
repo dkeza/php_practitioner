@@ -1,9 +1,7 @@
 <?php
 
-require("functions.php");
+require("bootstrap.php");
 require("task.php");
-require("connection.php");
-require("querybuilder.php");
 
 $pdo = Connection::connectToDB();
 
