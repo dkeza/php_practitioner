@@ -10,13 +10,4 @@ class Connection {
         }
         return $pdo;
     }
-
-    static function fetchAllTasks($pdo)
-    {
-        $statement = $pdo->prepare('SELECT id, description, completed FROM tasks');
-
-        $statement->execute();
-        $tasks = $statement->fetchAll(PDO::FETCH_CLASS, 'Task');
-        return $tasks;
-    }
 }
