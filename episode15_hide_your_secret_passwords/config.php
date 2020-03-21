@@ -6,6 +6,8 @@ return [
         'name' => 'tasks',
         'username' => 'root',
         'password' => 'root',
-        'options' => []
+        'options' => [
+            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
+        ]
     ]
 ];
