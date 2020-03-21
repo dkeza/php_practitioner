@@ -1,10 +1,7 @@
 <?php
 
-$query = require("core/bootstrap.php");
-require("core/task.php");
+$database = require($_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . "core/bootstrap.php");
+require($rootDir . "core/task.php");
 
-$tasks = $query->selectAll('tasks','Task');
 
-//dd($tasks);
-
-require("views/index.view.php");
+require($rootDir . "controllers/index.php");

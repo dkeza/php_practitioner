@@ -9,8 +9,8 @@
 
     <nav>
         <ul>
-            <li><a href="/contact.php">Contact us</a></li>
-            <li><a href="/about.php">About us</a></li>
+            <li><a href="/controllers/contact.php">Contact us</a></li>
+            <li><a href="/controllers/about.php">About us</a></li>
         </ul>
     </nav>
 

@@ -1,9 +1,11 @@
 <?php
 
-require("core/functions.php");
-require("core/database/connection.php");
-require("core/database/querybuilder.php");
+$rootDir = $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR;
 
-$config = require("config.php");
+require($rootDir . "core/functions.php");
+require($rootDir . "core/database/connection.php");
+require($rootDir . "core/database/querybuilder.php");
+
+$config = require($rootDir . "config.php");
 
 return new QueryBuilder(Connection::make($config['database']));
