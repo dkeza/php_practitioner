@@ -1,10 +1,10 @@
 <?php
 
-$query = require("bootstrap.php");
-require("task.php");
+$query = require("core/bootstrap.php");
+require("core/task.php");
 
 $tasks = $query->selectAll('tasks','Task');
 
 //dd($tasks);
 
-require("index.view.php");
+require("views/index.view.php");
