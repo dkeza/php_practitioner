@@ -4,6 +4,7 @@ $rootDir = $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR;
 
 require($rootDir . "core/functions.php");
 require($rootDir . "core/router.php");
+require($rootDir . "core/request.php");
 require($rootDir . "core/database/connection.php");
 require($rootDir . "core/database/querybuilder.php");
 
