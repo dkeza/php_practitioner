@@ -1,10 +1,8 @@
 <?php
 
-$rootDir = $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR;
+require("core/bootstrap.php");
+require("core/task.php");
 
-require($rootDir . "core/bootstrap.php");
-require($rootDir . "core/task.php");
-
-$router = Router::load($rootDir . "routes.php");
+$router = Router::load( "routes.php");
 
 require($router->direct(Request::uri()));

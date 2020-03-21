@@ -1,3 +1,3 @@
 <?php
 
-require($rootDir . "views/contact.view.php");
+require("views/contact.view.php");
