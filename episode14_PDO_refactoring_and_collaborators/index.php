@@ -1,12 +1,10 @@
 <?php
 
-require("bootstrap.php");
+$query = require("bootstrap.php");
 require("task.php");
 
-$pdo = Connection::connectToDB();
+$tasks = $query->selectAll('tasks','Task');
 
-$query = new QueryBuilder($pdo);
-
-$tasks = $query->selectAll('tasks');
+//dd($tasks);
 
 require("index.view.php");
