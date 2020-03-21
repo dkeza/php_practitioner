@@ -2,10 +2,11 @@
 
 require("functions.php");
 require("task.php");
+require("connection.php");
 
-$pdo = connectToDB();
+$pdo = Connection::connectToDB();
 
-$tasks = fetchAllTasks($pdo);
+$tasks = Connection::fetchAllTasks($pdo);
 
 
 require("index.view.php");

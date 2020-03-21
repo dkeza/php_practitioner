@@ -13,13 +13,13 @@
                     <strong>Title: </strong>
                     
                     <?php if ($task->completed): ?>
-                        <strike>
+                        <span style="text-decoration: line-through;">
                     <?php endif ?>
 
                     <?=$task->description;?>
 
                     <?php if ($task->completed): ?>
-                        </strike>
+                        </span>
                     <?php endif ?>
 
                 </li>
