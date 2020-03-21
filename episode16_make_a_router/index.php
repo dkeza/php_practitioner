@@ -7,5 +7,6 @@ $router = new Router();
 
 require($rootDir . "routes.php");
 
+$uri = trim($_SERVER['REQUEST_URI'],'/');
 
-require($rootDir . $router->direct(''));
+require($rootDir . $router->direct($uri));
