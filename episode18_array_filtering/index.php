@@ -19,11 +19,15 @@ $posts = [
     new Post("Forth post", false)
 ];
 
-$unpublishedPosts = array_filter($posts, function($post) {
-    return !$post->published;
-});
+//$unpublishedPosts = array_filter($posts, function($post) {
+//    return !$post->published;
+//});
 
-var_dump($unpublishedPosts);
+$modified = array_map(function($post) {
+    return ['title', $post->title];
+}, $posts);
+
+var_dump($modified);
 
 die();
 
