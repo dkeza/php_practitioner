@@ -7,7 +7,7 @@
 </head>
 <body>
 
-    <h1>About our culture</h1>
+    <h1>About culture in <?=$company;?></h1>
 
 </body>
 </html>
