@@ -21,4 +21,9 @@
     <?php endforeach ?>
 </ul>
 
+<form method="POST" action="/create">
+    <input name="description">
+    <button type="submit">Save</button>
+</form>
+
 <?php require('views/partials/footer.php'); ?>
