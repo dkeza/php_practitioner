@@ -23,11 +23,13 @@ $posts = [
 //    return !$post->published;
 //});
 
-$modified = array_map(function($post) {
-    return ['title', $post->title];
-}, $posts);
+//$modified = array_map(function($post) {
+//    return ['title', $post->title];
+//}, $posts);
 
-var_dump($modified);
+$titles = array_column($posts, 'title');
+
+var_dump($titles);
 
 die();
 
