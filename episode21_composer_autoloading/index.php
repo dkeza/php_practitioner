@@ -1,7 +1,7 @@
 <?php
 
+require("vendor/autoload.php");
 require("core/bootstrap.php");
-require("core/task.php");
 
 $router = Router::load( "routes.php");
 
