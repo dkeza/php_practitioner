@@ -26,10 +26,13 @@ class QueryBuilder {
             ':' . implode(', :', array_keys($parameters))
         );
 
-        $statement = $this->pdo->prepare($sql);
+        try {
+            $statement = $this->pdo->prepare($sql);
 
-        $statement->execute($parameters);
-
+            $statement->execute($parameters);
+        } catch (Exception $e) {
+            die("Error 500");
+        }
         return true;;
     }
 
