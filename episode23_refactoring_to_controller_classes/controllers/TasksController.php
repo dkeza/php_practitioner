@@ -17,8 +17,8 @@ class TasksController {
             ]
         );
 
-        header("HTTP/1.1 303 See Other");
-        header("Location: http://$_SERVER[HTTP_HOST]");
+        $url = "/";
+        redirect($url);
     }
 
 
