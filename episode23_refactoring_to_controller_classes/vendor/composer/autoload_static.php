@@ -17,6 +17,7 @@ class ComposerStaticInit20a1366057331965cea5cbffaa9ca090
         'Request' => __DIR__ . '/../..' . '/core/request.php',
         'Router' => __DIR__ . '/../..' . '/core/router.php',
         'Task' => __DIR__ . '/../..' . '/core/task.php',
+        'TasksController' => __DIR__ . '/../..' . '/controllers/TasksController.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

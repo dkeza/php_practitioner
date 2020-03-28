@@ -16,4 +16,5 @@ return array(
     'Request' => $baseDir . '/core/request.php',
     'Router' => $baseDir . '/core/router.php',
     'Task' => $baseDir . '/core/task.php',
+    'TasksController' => $baseDir . '/controllers/TasksController.php',
 );

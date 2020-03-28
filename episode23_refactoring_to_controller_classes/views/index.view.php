@@ -21,7 +21,7 @@
     <?php endforeach ?>
 </ul>
 
-<form method="POST" action="/create">
+<form method="POST" action="/store">
     <input name="description">
     <button type="submit">Save</button>
 </form>
