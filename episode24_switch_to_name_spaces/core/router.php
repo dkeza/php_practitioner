@@ -1,5 +1,7 @@
 <?php
 
+namespace Application\Core;
+
 class Router {
 
     public $routes = [
@@ -34,6 +36,8 @@ class Router {
     }
 
     protected function callAction($controllerName, $action) {
+
+        $controllerName = "Application\\Controllers\\" . $controllerName;
 
         $controller = new $controllerName;
 

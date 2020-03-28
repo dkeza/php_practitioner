@@ -1,5 +1,7 @@
 <?php
 
+namespace Application\Controllers;
+
 class PagesController {
 
     public function about() {

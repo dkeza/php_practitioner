@@ -1,9 +1,13 @@
 <?php
 
+namespace Application\Controllers;
+
+Use Application\Core\App;
+
 class TasksController {
 
     public function home() {
-        $tasks = App::get('database')->selectAll('tasks','Task');
+        $tasks = App::get('database')->selectAll('tasks','Application\Core\Task');
 
         return view('index', ['tasks' => $tasks]);
     }

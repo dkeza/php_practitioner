@@ -7,17 +7,17 @@ namespace Composer\Autoload;
 class ComposerStaticInit20a1366057331965cea5cbffaa9ca090
 {
     public static $classMap = array (
-        'App' => __DIR__ . '/../..' . '/core/App.php',
+        'Application\\Controllers\\PagesController' => __DIR__ . '/../..' . '/controllers/PagesController.php',
+        'Application\\Controllers\\TasksController' => __DIR__ . '/../..' . '/controllers/TasksController.php',
+        'Application\\Core\\App' => __DIR__ . '/../..' . '/core/App.php',
+        'Application\\Core\\Database\\Connection' => __DIR__ . '/../..' . '/core/database/connection.php',
+        'Application\\Core\\Database\\QueryBuilder' => __DIR__ . '/../..' . '/core/database/querybuilder.php',
+        'Application\\Core\\Request' => __DIR__ . '/../..' . '/core/request.php',
+        'Application\\Core\\Router' => __DIR__ . '/../..' . '/core/router.php',
+        'Application\\Core\\Task' => __DIR__ . '/../..' . '/core/task.php',
         'ComposerAutoloaderInit20a1366057331965cea5cbffaa9ca090' => __DIR__ . '/..' . '/composer/autoload_real.php',
         'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
         'Composer\\Autoload\\ComposerStaticInit20a1366057331965cea5cbffaa9ca090' => __DIR__ . '/..' . '/composer/autoload_static.php',
-        'Connection' => __DIR__ . '/../..' . '/core/database/connection.php',
-        'PagesController' => __DIR__ . '/../..' . '/controllers/PagesController.php',
-        'QueryBuilder' => __DIR__ . '/../..' . '/core/database/querybuilder.php',
-        'Request' => __DIR__ . '/../..' . '/core/request.php',
-        'Router' => __DIR__ . '/../..' . '/core/router.php',
-        'Task' => __DIR__ . '/../..' . '/core/task.php',
-        'TasksController' => __DIR__ . '/../..' . '/controllers/TasksController.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
