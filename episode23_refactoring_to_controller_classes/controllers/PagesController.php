@@ -5,21 +5,21 @@ class PagesController {
     public function home() {
         $tasks = App::get('database')->selectAll('tasks','Task');
 
-        require("views/index.view.php");
+        return view('index', ['tasks' => $tasks]);
     }
 
     public function about() {
-        require("views/about.view.php");
+        return view('about');
     }
 
     public function aboutCulture() {
         $company = "Acme Inc.";
 
-        require("views/about-culture.view.php");
+        return view('about-culture', ['company'=>$company]);
     }
 
     public function contact() {
-        require("views/contact.view.php");
+        return view('contact');
     }
 
     public function create() {
